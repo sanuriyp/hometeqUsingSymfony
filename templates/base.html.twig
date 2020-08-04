@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{asset('assets/css/mystylesheet.css')}}">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        {{include('inc/headfile.html.twig')}}
+        {% block body %}{% endblock %}
+        {{include('inc/footfile.html.twig')}}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
